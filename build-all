@@ -2,9 +2,10 @@
 
 DIR=`pwd`
 
-cd ${1-../incubator-netbeans}
+cd ${1-../netbeans}
 
-ant -Dcluster.config=full build-nozip build-nbms build-source-zips build-javadoc
+#ant -Dcluster.config=full build-nozip build-nbms build-source-zips build-javadoc
+ant -Dcluster.config=platform build-nozip build-nbms build-source-zips build-javadoc
 
 echo `pwd`
 
