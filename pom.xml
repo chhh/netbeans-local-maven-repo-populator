@@ -17,7 +17,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <nbsrc>c:/Users/chhh/code/repos/netbeans</nbsrc>
-        <nbversion>RELEASE1235</nbversion>
+        <nbversion>RELEASE1236</nbversion>
     </properties>
     <build>
         <plugins>
@@ -80,6 +80,7 @@
                     <netbeansSourcesDirectory>${nbsrc}/nbbuild/build/source-zips</netbeansSourcesDirectory>
                     <netbeansJavadocDirectory>${nbsrc}/nbbuild/build/javadoc</netbeansJavadocDirectory>
                     <forcedVersion>${nbversion}</forcedVersion>
+                    <parentGAV>org.apache.netbeans:netbeans-parent:2</parentGAV>
                 </configuration>
                 <executions>
                     <!--
